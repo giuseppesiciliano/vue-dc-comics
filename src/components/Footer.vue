@@ -228,6 +228,11 @@ export default {
 .list-name {
     padding-bottom: 30px;
 
+    .text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
     li {
         padding: 5px 0;
         color: gray;

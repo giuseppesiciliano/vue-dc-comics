@@ -68,7 +68,7 @@ export default {
     }
 
     .service-text {
-        color: white;
+        color: $brand_secondary_color;
         padding-left: 18px;
     }
 }

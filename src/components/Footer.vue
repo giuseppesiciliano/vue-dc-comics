@@ -1,8 +1,8 @@
 <template>
     <footer>
-        <div class="container">
-            <h1>FOOTER</h1>
-        </div>
+        <div class="bg-image"></div>
+        <div class="container"></div>
+        <div class="sign-up"></div>
     </footer>
 </template>
 
@@ -15,8 +15,15 @@ export default {
 
 
 <style scoped lang="scss">
-footer {
-    background-color: brown;
-    height: 450px;
+.bg-image {
+    background-image: url("../assets/img/footer-bg.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-up {
+    background-color: #303030;
+    height: 120px;
 }
 </style>

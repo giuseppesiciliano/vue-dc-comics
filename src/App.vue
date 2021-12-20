@@ -35,8 +35,8 @@ export default {
 @import './style/common.scss';
 
 main {
-  background-color: black;
+  background-color: #1c1c1c;
   color: white;
-  height: 100px;
+  height: 170px;
 }
 </style>

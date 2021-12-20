@@ -10,48 +10,20 @@
 
                         <!-- DC Comics -->
                         <div class="list-name">
-                            <div class="text">DC COMICS</div>
+                            <div class="text">{{lists[0].title}}</div>
                             <ul>
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
+                                <li v-for="(element, index) in lists[0].links" :key="index">
+                                    <a href="#">{{ element.name }}</a>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Shop -->
                         <div class="list-name">
-                            <div class="text">SHOP</div>
+                            <div class="text">{{lists[1].title}}</div>
                             <ul>
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
+                                <li v-for="(element, index) in lists[1].links" :key="index">
+                                    <a href="#">{{ element.name }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,50 +36,10 @@
 
                         <!-- DC -->
                         <div class="list-name">
-                            <div class="text">DC</div>
+                            <div class="text">{{lists[2].title}}</div>
                             <ul>
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
+                                <li v-for="(element, index) in lists[2].links" :key="index">
+                                    <a href="#">{{ element.name }}</a>
                                 </li>
 
                             </ul>
@@ -121,26 +53,10 @@
 
                         <!-- DC -->
                         <div class="list-name">
-                            <div class="text">SITES</div>
+                            <div class="text">{{lists[3].title}}</div>
                             <ul>
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">link</a>
+                                <li v-for="(element, index) in lists[3].links" :key="index">
+                                    <a href="#">{{ element.name }}</a>
                                 </li>
                             </ul>
                         </div>

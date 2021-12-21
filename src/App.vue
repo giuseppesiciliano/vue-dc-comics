@@ -3,12 +3,11 @@
     <Header />
   
     <main>
-      <section class="container">
-        <h3>Content goes here</h3>
-      </section>
+      <MagazinesList />
     </main>
 
     <PreFooter />
+
     <Footer />
 
   </div>
@@ -18,12 +17,15 @@
 import Header from "./components/Header.vue";
 import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
+import MagazinesList from "./components/MagazinesList.vue";
+
 
 
 export default {
   name: "App",
   components: {
     Header,
+    MagazinesList,
     PreFooter,
     Footer
   },
@@ -34,9 +36,4 @@ export default {
 @import './style/generals.scss';
 @import './style/common.scss';
 
-main {
-  background-color: #1c1c1c;
-  color: white;
-  height: 170px;
-}
 </style>

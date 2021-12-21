@@ -56,7 +56,7 @@
                             <div class="text">{{lists[3].title}}</div>
                             <ul>
                                 <li v-for="(element, index) in lists[3].links" :key="index">
-                                    <a href="#">{{ element.name }}</a>
+                                    <a href="#">{{element.name}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -67,8 +67,21 @@
         </div>
 
         
+        <div class="end-footer">
+            <div class="container">
+                <div class="content">
 
-        <div class="sign-up"></div>
+                    <div class="sign-up">SIGN-UP NOW!</div>
+
+                    <div class="social">
+                        FOLLOW US
+                        <div class="icons">
+                            <img v-for="(logo, index) in logos" :key="index" :src="logo.logo" :alt="logo.alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -199,6 +212,28 @@ export default {
                         }
                     ]
                 }
+            ],
+            logos: [
+                {
+                    alt: "Facebook",
+                    logo: require ('../assets/img/footer-facebook.png')
+                },
+                {
+                    alt: "Twitter",
+                    logo: require ('../assets/img/footer-twitter.png')
+                },
+                {
+                    alt: "YouTube",
+                    logo: require ('../assets/img/footer-youtube.png')
+                },
+                {
+                    alt: "Pinterest",
+                    logo: require ('../assets/img/footer-pinterest.png')
+                },
+                {
+                    alt: "Periscope",
+                    logo: require ('../assets/img/footer-periscope.png')
+                }
             ]
         }
     }
@@ -208,6 +243,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../style/common.scss';
+@import '../style/variables.scss';
 
 
 .bg-image {
@@ -220,7 +256,7 @@ export default {
 .list {
     display: flex;
     padding: 50px;
-    color: white;
+    color: $brand_secondary_color;
 }
 .col {
     padding-right: 50px;
@@ -243,8 +279,31 @@ export default {
     }
 }
 
-.sign-up {
+.end-footer {
     background-color: #303030;
-    height: 120px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+
+    .sign-up {
+        border: 2px solid $brand_primary_color;
+        padding: 10px;
+        color: $brand_secondary_color;
+        margin: 30px 0;
+    }
+
+    .social {
+        color: $brand_primary_color;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        img {
+            padding-left: 20px;
+        }
+    }
 }
 </style>

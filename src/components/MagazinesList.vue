@@ -3,7 +3,18 @@
         <div class="container">
 
             <div class="magazines-list">
-                <!-- Single Magazine -->
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
+                <Magazine />
             </div>
         </div>
     </section>
@@ -11,8 +22,14 @@
 
 
 <script>
+import Magazine from "./Magazine.vue";
+
+
 export default {
-    name: 'MagazinesList',
+    name: "MagazinesList",
+    components: {
+        Magazine,
+    },
     data: function() {
         return {
             magazines: [
@@ -96,8 +113,15 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../style/variables.scss';
+
 section {
     background-color: black;
-    color: white;
+    color: $brand_secondary_color;
+}
+.magazines-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
 }
 </style>

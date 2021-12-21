@@ -1,17 +1,18 @@
 <template>
     <div class="single-magazine">
         <div class="box">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+            <img :src="magazineObject.thumb" alt="">
         </div>
 
-        <h5>ACTION COMICS</h5>
+        <h5>{{magazineObject.series.toUpperCase()}}</h5>
     </div>
 </template>
 
 
 <script>
 export default {
-    name: 'Magazine'
+    name: 'Magazine',
+    props: ['magazineObject']
 }
 </script>
 
@@ -28,6 +29,7 @@ export default {
     }
     h5 {
         padding-top: 20px;
+        margin-right: 40px;
     }
 }
 </style>

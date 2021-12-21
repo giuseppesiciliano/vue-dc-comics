@@ -3,18 +3,7 @@
         <div class="container">
 
             <div class="magazines-list">
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
-                <Magazine />
+                <Magazine v-for="(magazine, index) in magazines" :key="index" :magazineObject="magazine"/>
             </div>
         </div>
     </section>

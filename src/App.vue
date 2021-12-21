@@ -3,6 +3,7 @@
     <Header />
   
     <main>
+      <Jumbotron />
       <MagazinesList />
     </main>
 
@@ -15,9 +16,10 @@
 
 <script>
 import Header from "./components/Header.vue";
+import Jumbotron from "./components/Jumbotron.vue";
+import MagazinesList from "./components/MagazinesList.vue";
 import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
-import MagazinesList from "./components/MagazinesList.vue";
 
 
 
@@ -25,6 +27,7 @@ export default {
   name: "App",
   components: {
     Header,
+    Jumbotron,
     MagazinesList,
     PreFooter,
     Footer

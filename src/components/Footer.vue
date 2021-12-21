@@ -1,5 +1,6 @@
 <template>
     <footer>
+
         <div class="bg-image">
 
             <div class="container">
@@ -64,6 +65,11 @@
                     <!-- END COL-RIGHT -->
                 </div>
             </div>
+
+            <div class="bg-img-dc">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+            </div>
+
         </div>
 
         
@@ -251,6 +257,15 @@ export default {
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+    .bg-img-dc {
+        position: absolute;
+        top: -30px;
+        right: 300px;
+    }
 }
 
 .list {

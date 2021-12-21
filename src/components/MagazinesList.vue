@@ -5,6 +5,10 @@
             <div class="magazines-list">
                 <Magazine v-for="(magazine, index) in magazines" :key="index" :magazineObject="magazine"/>
             </div>
+
+            <div class="load-more">
+                <a href="#">LOAD MORE</a>
+            </div>
         </div>
     </section>
 </template>
@@ -105,12 +109,22 @@ export default {
 @import '../style/variables.scss';
 
 section {
-    background-color: black;
+    background-color: #1c1c1c;
     color: $brand_secondary_color;
 }
 .magazines-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0;
+}
+.load-more {
+    padding: 40px 0;
+    text-align: center;
+
+    a {
+        color: $brand_secondary_color;
+        font-weight: bold;
+        background-color: $brand_primary_color;
+        padding: 10px 30px;
+    }
 }
 </style>

@@ -20,7 +20,7 @@ export default {
 <style scoped lang="scss">
 .single-magazine {
     width: calc( 100% / 6 );
-    padding: 20px 0;
+    padding-top: 50px;
 
     .box {
         width: 200px;

@@ -2,6 +2,10 @@
     <section>
         <div class="container">
 
+            <span class="current-series">
+                CURRENT SERIES
+            </span>
+
             <div class="magazines-list">
                 <Magazine v-for="(magazine, index) in magazines" :key="index" :magazineObject="magazine"/>
             </div>
@@ -111,6 +115,14 @@ export default {
 section {
     background-color: #1c1c1c;
     color: $brand_secondary_color;
+}
+.current-series {
+    color: $brand_secondary_color;
+    font-weight: bold;
+    background-color: $brand_primary_color;
+    padding: 10px 30px;
+    position: relative;
+    top: -10px;
 }
 .magazines-list {
     display: flex;
